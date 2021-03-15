@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex5</title>
+</head>
+<body>
+<h2>Bài 5: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.</h2>
+<h3>Cho tam giac vuong ABC co AC la canh huyen.</h3>
+<p id="display"></p>
+<p id="dientich"></p>
+<script>
+    let ac=+prompt("nhap canh ke AB");
+    let bc=+prompt("nhap canh ke BC");
+    let c=Math.sqrt((ac*ac)+(bc*bc)).toFixed(2);
+    s=1/2*ac*bc;
+    document.getElementById("display").innerText=("Ba canh cua tam giac la: AB:" + ac + "BC:" + bc + "AC: " +c);
+    document.getElementById("dientich").innerText=("Dien tich tam giac la:"+s);
+</script>
+</body>
+</html>

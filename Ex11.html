@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex11</title>
+</head>
+<body>
+<h2>Bài 11: Viết chương trình tính thuế thu nhập cá nhân.</h2>
+<p id="display"></p>
+<script>
+    let salary=+prompt("nhap so tien luong cua ban:");
+    let b
+    if(salary===5) {
+        b = salary * 0.05
+        document.getElementById("display").innerText = "So thue ban phai nop la:" + b;
+    }else if (salary <= 10) {
+            b = salary * 0.1 + 0.25
+            document.getElementById("display").innerText = "So thue ban phai nop la:" + b.toFixed(1)+"trieu";
+        }else if (salary <= 18) {
+            b = salary * 0.15 + 0.75
+            document.getElementById("display").innerText = "So thue ban phai nop la:" + b.toFixed(1)+"trieu";
+        }else if (salary <= 32) {
+            b = salary * 0.2 + 1.95
+            document.getElementById("display").innerText = "So thue ban phai nop la:" + b.toFixed(1)+"trieu";
+        }else if (salary <= 52) {
+            b = salary * 0.25 + 4.75
+            document.getElementById("display").innerText = "So thue ban phai nop la:" + b.toFixed(1)+"trieu";
+        }else if (salary <= 80) {
+            b = salary * 0.3 + 9.75
+            document.getElementById("display").innerText = "So thue ban phai nop la:" + b.toFixed(1)+"trieu";
+        }else if (salary > 80) {
+        b = salary * 0.35 + 18.15
+        document.getElementById("display").innerText = "So thue ban phai nop la:" + b.toFixed(1) + "trieu";
+    }
+
+</script>
+</body>
+</html>

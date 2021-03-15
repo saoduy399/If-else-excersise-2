@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex7</title>
+</head>
+<body>
+<h2>Bài 7: Giải phương trình bậc 2.</h2>
+<p>ax^2+bx+c=0</p>
+<p id="display"></p>
+<p id="result"></p>
+<script>
+    let a=+prompt("nhap so a:");
+    let b=+prompt("nhap so b:");
+    let c=+prompt("nhap so c:");
+    let x1;
+    let x2;
+    delta=(b*b)-4*a*c;
+    if(a===0){
+        document.getElementById("display").innerText="Phuong trinh vo nghiem";
+    } else if(delta<0){
+        document.getElementById("display").innerText="Phuong trinh vo nghiem";
+    } else if(delta===0){
+        document.getElementById("display").innerText="Phuong trinh co nghiem kep:";
+        x1=-b/2*a;
+        document.getElementById("result").innerText=("x1=x2="+x1);
+    } else (delta>0);{
+        document.getElementById("display").innerText="Phuong trinh co hai nghiem phan biet:";
+        x1=(-b+Math.sqrt(delta)/2*a);
+        x2=(-b-Math.sqrt(delta)/2*a);
+        document.getElementById("result").innerText=("x1="+x1 + "x2="+x2);
+    }
+</script>
+</body>
+</html>
